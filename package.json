@@ -1,0 +1,24 @@
+{
+  "name": "arraysdiff",
+  "version": "1.0.0",
+  "description": "Given two arrays, finds the items that were added and removed",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelsolaorbaiceta/arraysdiff.git"
+  },
+  "keywords": [
+    "js",
+    "arrays",
+    "diff"
+  ],
+  "author": "Angel Sola Orbaiceta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angelsolaorbaiceta/arraysdiff/issues"
+  },
+  "homepage": "https://github.com/angelsolaorbaiceta/arraysdiff#readme"
+}
