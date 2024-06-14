@@ -2,6 +2,12 @@
 
 Given two arrays, it finds the items that were added and removed.
 
+## Installation
+
+```bash
+$ npm install diff-between-arrays
+```
+
 ## Usage
 
 Example: adding a `4` and removing a `1` from `[1, 2, 3]`.
