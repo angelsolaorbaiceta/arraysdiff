@@ -1,6 +1,6 @@
 {
   "name": "diff-between-arrays",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Given two arrays, finds the items that were added and removed",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
