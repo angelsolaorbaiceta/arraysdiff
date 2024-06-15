@@ -1,0 +1,46 @@
+name: ci-test-and-build
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js v20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install production deps
+        run: npm install --production
+
+      - name: Build
+        run: npm run build
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js v20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install all deps
+        run: npm install
+
+      - name: Test with coverage
+        run: npm run coverage
